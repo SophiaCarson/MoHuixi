@@ -2,10 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QDialog>
 #include <vector>
-#include <iostream>
 #include <QMessageBox>
+#include <QAction>
+#include <math.h>
+#include <iomanip>
+#include <iostream>
+#define EPS 1e-7
 using namespace std;
 
 
@@ -33,8 +36,18 @@ private slots:
 
     bool isValid(vector<double> xv,vector<double> yv,int order);
 
+    void on_RdefaultB_3_clicked();
+
+    void on_RombergCal_3_clicked();
+
+    void on_RclearB_3_clicked();
+
+    void pop();
+
 private:
     Ui::MainWindow *ui;
+    double function(double x);
+    void newMethod();
 };
 
 #endif // MAINWINDOW_H
