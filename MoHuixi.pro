@@ -26,7 +26,8 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    C:/Users/suh_2/Desktop/muparser-2.2.6.1/muparser-2.2.6.1/samples/example1/example1.cpp
 
 HEADERS += \
         mainwindow.h
